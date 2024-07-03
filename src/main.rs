@@ -18,7 +18,7 @@ fn update_commit_push() {
     let commit_command = Command::new("git")
         .arg("commit")
         // .arg("-a") 
-        .arg("-m") 
+        .arg("-m")
         .arg(name_generator())
         .output()
         .expect("Failed to execute git commit command");
