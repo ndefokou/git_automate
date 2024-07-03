@@ -12,7 +12,7 @@ fn update_commit_push() {
     if !add_command.status.success() {
         eprintln!("Error: Failed to add files to the git repo.");
         exit(1);
-    }
+    } 
 
     // Command 2: Commit all changes
     let commit_command = Command::new("git")
